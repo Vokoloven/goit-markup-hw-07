@@ -103,7 +103,6 @@ body {
 }
 
 .header__box .link {
-  display: block;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -147,67 +146,44 @@ body {
   margin-right: 30px;
 }
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-.envelope-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.phone-icon {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
-
-.header__list .link,
-.header__contacts .link {
-  position: relative;
-  transition: color 250ms var(--transition-timing-function),
-    fill 250ms var(--transition-timing-function);
-}
-
-.header__list .link:hover,
-.header__list .link:focus,
-.header__contacts .link:hover,
-.header__contacts .link:focus {
-  color: var(--button-color);
-  fill: var(--button-color);
-}
-
-/* Добавлена анимация подчеркивания ссылки  */
-/* .header-list .link::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  content: "";
-  width: 100%;
-  height: 4px;
-
-  transform: scaleX(0%) translateY(1px);
-  transition: transform 250ms var(--transition-timing-function);
-  border-radius: 2px;
-  background-color: var(--button-color);
-} */
-
-/* .header-list .link:hover:after,
-.header-list .link:focus:after {
-  transform: scale(100%) translateY(1px);
-} */
-
-.header__contacts .contacts {
+.header__reference {
   display: flex;
   color: var(--paragraph-color);
   fill: var(--paragraph-color);
   align-items: center;
 }
-.hero {
+
+.header__envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.header__phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header__link-animation,
+.header__reference--animation {
+  position: relative;
+  transition: color 250ms var(--transition-timing-function),
+    fill 250ms var(--transition-timing-function);
+}
+
+.header__link-animation:hover,
+.header__link-animation:focus,
+.header__reference--animation:hover,
+.header__reference--animation:focus {
+  color: var(--button-color);
+  fill: var(--button-color);
+}
+
+.hero--appearance {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -220,7 +196,7 @@ body {
     url("../images/hero.jpg");
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
 
   margin: 0 auto 30px;
@@ -234,7 +210,7 @@ body {
   color: var(--white-color);
 }
 
-.hero .hero-button {
+.hero__button {
   display: block;
   padding: 10px 32px;
   min-width: 200px;
@@ -256,10 +232,11 @@ body {
 
   cursor: pointer;
 }
-.hero .hero-button:hover,
-.hero .hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--add-font-color);
 }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .feature {
   padding-top: 94px;
