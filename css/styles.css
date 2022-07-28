@@ -22,6 +22,30 @@ body {
   color: var(--main-font-color);
 }
 
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--add-font-color);
+}
+
+.list {
+  list-style: none;
+  font-style: normal;
+}
+
+/* .icon {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+.hiden-title {
+  display: none;
+}
+
 .header--appearance {
   margin-left: auto;
   margin-right: auto;
@@ -47,41 +71,7 @@ body {
   align-items: center;
 }
 
-/* Отключение точки рядом в списках */
-.list {
-  list-style: none;
-  font-style: normal;
-}
-/* Кастомизация иконок svg */
-.icon {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Скрываем заголовок которого нет на макете */
-.hiden-title {
-  display: none;
-}
-
-/* Удаляем подчеркивание в ссылках */
-.link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--add-font-color);
-}
-
-.header__box .link {
-  display: block;
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header__navigation .header-logo {
+.header__logo {
   display: block;
   margin-right: 93px;
   padding-top: 24px;
@@ -92,14 +82,15 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--add-font-colour);
 }
 
-.header-logo-web {
+.header__web {
   color: var(--button-color);
 }
 
-.header-list {
+.header__list {
   display: flex;
   padding: 0;
   margin-top: 0;
@@ -111,17 +102,52 @@ body {
   letter-spacing: 0.02em;
 }
 
-.header__box .items:not(:last-child) {
+.header__box .link {
+  display: block;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header__box .header__items:not(:last-child) {
   margin-right: 50px;
 }
 
-.header__box .goto-list {
+.header__studio,
+.header__portfolio {
+  position: relative;
+  color: var(--button-color);
+}
+
+.header__studio::after,
+.header__portfolio::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  content: "";
+
+  transform: translateY(1px);
+  border-radius: 2px;
+  background-color: var(--button-color);
+}
+
+.header__contacts {
   display: flex;
   margin-left: auto;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.header__communication:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .envelope-icon {
   width: 16px;
@@ -135,45 +161,19 @@ body {
   margin-right: 10px;
 }
 
-.header__box .address:not(:last-child) {
-  margin-right: 30px;
-}
-
-.header-list .link,
-.goto-list .link {
+.header__list .link,
+.header__contacts .link {
   position: relative;
   transition: color 250ms var(--transition-timing-function),
     fill 250ms var(--transition-timing-function);
 }
 
-.header-list .link:hover,
-.header-list .link:focus,
-.goto-list .link:hover,
-.goto-list .link:focus {
+.header__list .link:hover,
+.header__list .link:focus,
+.header__contacts .link:hover,
+.header__contacts .link:focus {
   color: var(--button-color);
   fill: var(--button-color);
-}
-
-.header--appearance .studio,
-.header--appearance .portfolio {
-  position: relative;
-  color: var(--button-color);
-}
-
-.header--appearance .studio::after,
-.header--appearance .portfolio::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  height: 4px;
-
-  content: "";
-
-  transform: translateY(1px);
-  border-radius: 2px;
-  background-color: var(--button-color);
 }
 
 /* Добавлена анимация подчеркивания ссылки  */
@@ -197,7 +197,7 @@ body {
   transform: scale(100%) translateY(1px);
 } */
 
-.goto-list .contacts {
+.header__contacts .contacts {
   display: flex;
   color: var(--paragraph-color);
   fill: var(--paragraph-color);
