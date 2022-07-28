@@ -1,15 +1,18 @@
-$whiteColor: #ffffff;
-$primaryBackgroundColor: #e5e5e5;
-$secondaryBackgroundColor: #2f303a;
-$thirdBackgroundColor: f5f4fa;
-$primaryFontColor: #212121;
-$secondaryFontColor: #000000;
-$thirdFontColor: #757575;
-$primaryRgbaColor: rgba(255, 255, 255, 0.6);
-$secondaryRgbaColor: rgba(255, 255, 255, 0.1);
-$thirdRgbaColor: rgba(47, 48, 58, 0.8);
-$primaryButtonColor: #2196f3;
-$socialNetworkColor: #afb1b8;
-$searchColor: rgba(33, 150, 243, 0.9);
-$backdropColor: rgba(0, 0, 0, 0.2);
-$transitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+:root {
+    --main-bcgrnd-color: #e5e5e5;
+    --main-font-color: #212121;
+    --button-color: #2196f3;
+    --add-font-color: #000000;
+    --paragraph-color: #757575;
+    --white-color: #ffffff;
+    --second-bcgrnd-color: #2f303a;
+    --third-bcgrnd-color: #f5f4fa;
+    --rgba-color: rgba(255, 255, 255, 0.6);
+    --border-header: #ececec;
+    --social-network: #afb1b8;
+    --social-network-rgba: rgba(255, 255, 255, 0.1);
+    --rgba-bcgrnd-color-for-work: rgba(47, 48, 58, 0.8);
+    --rgba-bcgrnd-color-for-search: rgba(33, 150, 243, 0.9);
+    --rgba-backdrop-color: rgba(0, 0, 0, 0.2);
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
