@@ -16,12 +16,37 @@
   --rgba-backdrop-color: rgba(0, 0, 0, 0.2);
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Глобальные стили в Body */
+
 body {
   font-family: "Roboto", sans-serif;
-  /* background-color: var(--main-bcgrnd-color); */
   color: var(--main-font-color);
 }
+
+.header--appearance {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--main-bcgrnd-color);
+}
+
+.header__box {
+  display: flex;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
 /* Отключение точки рядом в списках */
 .list {
   list-style: none;
@@ -38,12 +63,7 @@ body {
 .hiden-title {
   display: none;
 }
-.header {
-  background-color: var(--white-color);
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid var(--main-bcgrnd-color);
-}
+
 /* Удаляем подчеркивание в ссылках */
 .link {
   font-weight: 500;
@@ -54,22 +74,14 @@ body {
   color: var(--add-font-color);
 }
 
-.main .link {
+.header__box .link {
   display: block;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.nav .header-logo {
+.header__navigation .header-logo {
   display: block;
   margin-right: 93px;
   padding-top: 24px;
@@ -99,20 +111,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.main .items:not(:last-child) {
+.header__box .items:not(:last-child) {
   margin-right: 50px;
 }
 
-.header .main {
-  display: flex;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.main .goto-list {
+.header__box .goto-list {
   display: flex;
   margin-left: auto;
   padding: 0;
@@ -132,7 +135,7 @@ body {
   margin-right: 10px;
 }
 
-.main .address:not(:last-child) {
+.header__box .address:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -151,14 +154,14 @@ body {
   fill: var(--button-color);
 }
 
-.header .studio,
-.header .portfolio {
+.header--appearance .studio,
+.header--appearance .portfolio {
   position: relative;
   color: var(--button-color);
 }
 
-.header .studio::after,
-.header .portfolio::after {
+.header--appearance .studio::after,
+.header--appearance .portfolio::after {
   position: absolute;
   bottom: 0;
   left: 0;
