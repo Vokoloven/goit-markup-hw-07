@@ -129,15 +129,17 @@
     position: relative;
     transition: color 250ms var(--transition-timing-function),
       fill 250ms var(--transition-timing-function);
+
+      &:hover,
+      &:focus,
+      &:hover,
+      &:focus {
+        color: var(--button-color);
+        fill: var(--button-color);
+      }
   }
   
-  .header__link-animation:hover,
-  .header__link-animation:focus,
-  .header__reference--animation:hover,
-  .header__reference--animation:focus {
-    color: var(--button-color);
-    fill: var(--button-color);
-  }
+
   
   .hero--appearance {
     padding-top: 200px;

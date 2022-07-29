@@ -50,13 +50,15 @@
     transition: fill 250ms var(--transition-timing-function);
   
     cursor: pointer;
+
+  &:hover,
+  &:focus {
+      fill: var(--button-color);
+    }
+    
   }
   
-  .backdrop .modal-button:hover,
-  .backdrop .modal-button:focus {
-    fill: var(--button-color);
-  }
-  
+
   .backdrop .modal-icon {
     width: 30px;
     height: 30px;
@@ -164,20 +166,22 @@
     transition: outline-color 250ms var(--transition-timing-function),
       border-color 250ms var(--transition-timing-function);
     cursor: pointer;
+    &:focus,
+    &:hover {
+      outline-color: var(--button-color);
+      border-color: var(--button-color);
+    }
+    &:focus + .icon-box,
+    &:hover + .icon-box {
+      fill: var(--button-color);
+      transition: fill 250ms var(--transition-timing-function);
+    }
+    
+    
   }
   
-  .contacts-input:focus,
-  .contacts-input:hover {
-    outline-color: var(--button-color);
-    border-color: var(--button-color);
-  }
-  
-  .contacts-input:focus + .icon-box,
-  .contacts-input:hover + .icon-box {
-    fill: var(--button-color);
-    transition: fill 250ms var(--transition-timing-function);
-  }
-  
+
+
   .backdrop .contacts-label:nth-child(2) .icon-box {
     position: absolute;
   
@@ -218,14 +222,16 @@
     border-radius: 4px;
     transition: outline-color 250ms var(--transition-timing-function),
       border-color 250ms var(--transition-timing-function);
+
+      &:focus,
+      &:hover {
+        outline-color: var(--button-color);
+        border-color: var(--button-color);
+      }
+      
   }
   
-  .backdrop .contacts-comment:focus,
-  .backdrop .contacts-comment:hover {
-    outline-color: var(--button-color);
-    border-color: var(--button-color);
-  }
-  
+
   .backdrop .contacts-comment::placeholder {
     font-size: 12px;
     line-height: 1.17;

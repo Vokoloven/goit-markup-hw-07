@@ -86,13 +86,15 @@
     fill: var(--social-network);
     transition: background-color 250ms var(--transition-timing-function),
       fill 250ms var(--transition-timing-function);
+
+      &:hover,
+      &:focus {
+        background-color: var(--button-color);
+        fill: var(--white-color);
+      }
   }
   
-  .team .social-link:hover,
-  .team .social-link:focus {
-    background-color: var(--button-color);
-    fill: var(--white-color);
-  }
+
   
   .team .social-icons {
     width: 20px;

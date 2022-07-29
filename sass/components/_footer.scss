@@ -102,13 +102,15 @@
     fill: var(--white-color);
   
     transition: background-color 250ms var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+      background-color: var(--button-color);
+    }
+    
   }
   
-  .footer .follow-link:hover,
-  .footer .follow-link:focus {
-    background-color: var(--button-color);
-  }
-  
+
   .footer .follow-icon {
     width: 20px;
     height: 20px;

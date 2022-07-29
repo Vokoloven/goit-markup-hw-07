@@ -41,13 +41,15 @@
     fill: var(--social-network);
     transition: fill 250ms var(--transition-timing-function),
       border-color 250ms var(--transition-timing-function);
+
+      &:hover,
+      &:focus {
+        fill: var(--button-color);
+        border-color: var(--button-color);
+      }
   }
   
-  .customers .customers-link:hover,
-  .customers .customers-link:focus {
-    fill: var(--button-color);
-    border-color: var(--button-color);
-  }
+
   
   .customers .customers-icon {
     width: 106px;

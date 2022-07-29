@@ -173,9 +173,9 @@ body {
   position: relative;
   transition: color 250ms var(--transition-timing-function), fill 250ms var(--transition-timing-function);
 }
-
-.header__link-animation:hover,
-.header__link-animation:focus,
+.header__link-animation:hover, .header__link-animation:focus, .header__link-animation:hover, .header__link-animation:focus,
+.header__reference--animation:hover,
+.header__reference--animation:focus,
 .header__reference--animation:hover,
 .header__reference--animation:focus {
   color: var(--button-color);
@@ -429,9 +429,7 @@ body {
   fill: var(--social-network);
   transition: background-color 250ms var(--transition-timing-function), fill 250ms var(--transition-timing-function);
 }
-
-.team .social-link:hover,
-.team .social-link:focus {
+.team .social-link:hover, .team .social-link:focus {
   background-color: var(--button-color);
   fill: var(--white-color);
 }
@@ -481,9 +479,7 @@ body {
   fill: var(--social-network);
   transition: fill 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
 }
-
-.customers .customers-link:hover,
-.customers .customers-link:focus {
+.customers-link:hover, .customers-link:focus {
   fill: var(--button-color);
   border-color: var(--button-color);
 }
@@ -592,9 +588,7 @@ body {
   fill: var(--white-color);
   transition: background-color 250ms var(--transition-timing-function);
 }
-
-.footer .follow-link:hover,
-.footer .follow-link:focus {
+.footer .follow-link:hover, .footer .follow-link:focus {
   background-color: var(--button-color);
 }
 
@@ -813,9 +807,7 @@ body {
   cursor: pointer;
   transition: color 250ms var(--transition-timing-function), background-color 250ms var(--transition-timing-function), box-shadow 250ms var(--transition-timing-function);
 }
-
-.filter-button:hover,
-.filter-button:focus {
+.filter-button:hover, .filter-button:focus {
   color: var(--white-color);
   background-color: var(--button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -952,9 +944,7 @@ body {
   transition: fill 250ms var(--transition-timing-function);
   cursor: pointer;
 }
-
-.backdrop .modal-button:hover,
-.backdrop .modal-button:focus {
+.backdrop .modal-button:hover, .backdrop .modal-button:focus {
   fill: var(--button-color);
 }
 
@@ -1057,15 +1047,11 @@ body {
   transition: outline-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
   cursor: pointer;
 }
-
-.contacts-input:focus,
-.contacts-input:hover {
+.backdrop .contacts-input:focus, .backdrop .contacts-input:hover {
   outline-color: var(--button-color);
   border-color: var(--button-color);
 }
-
-.contacts-input:focus + .icon-box,
-.contacts-input:hover + .icon-box {
+.backdrop .contacts-input:focus + .icon-box, .backdrop .contacts-input:hover + .icon-box {
   fill: var(--button-color);
   transition: fill 250ms var(--transition-timing-function);
 }
@@ -1105,9 +1091,7 @@ body {
   border-radius: 4px;
   transition: outline-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
 }
-
-.backdrop .contacts-comment:focus,
-.backdrop .contacts-comment:hover {
+.backdrop .contacts-comment:focus, .backdrop .contacts-comment:hover {
   outline-color: var(--button-color);
   border-color: var(--button-color);
 }
