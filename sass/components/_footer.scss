@@ -1,19 +1,17 @@
 .footer {
-    background-color: var(--second-bcgrnd-color);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  .footer .footer-box {
+  background-color: var(--second-bcgrnd-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .footer-box {
     display: flex;
   }
-  
-  .footer .footer-logo {
+  .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
-  
+
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -21,13 +19,11 @@
     letter-spacing: 0.03em;
     color: var(--white-color);
   }
-  
-  .footer .footer-logo-web {
+  .footer-logo-web {
     color: var(--button-color);
   }
-  
-  .footer .footer-link,
-  .footer .footer-address {
+  .footer-link,
+  .footer-address {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -35,246 +31,234 @@
     color: var(--white-color);
     transition: color 250ms var(--transition-timing-function);
   }
-  .footer .footer-link {
+  .footer-link {
     color: var(--rgba-color);
   }
-  
-  .footer .footer-link:hover,
-  .footer .footer-address:hover,
-  .footer .footer-link:focus,
-  .footer .footer-address:focus {
+  .footer-link:hover,
+  .footer-address:hover,
+  .footer-link:focus,
+  .footer-address:focus {
     color: var(--button-color);
   }
-  
   .footer .list {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
   }
-  
-  .footer .goto:not(:last-child) {
+  .goto:not(:last-child) {
     margin-bottom: 9px;
   }
-  
-  .footer .address-box {
+
+  .address-box {
     display: flex;
     flex-direction: column;
   }
-  
-  /* Follower  */
-  
-  .footer .address-box:not(:last-child) {
+
+  .address-box:not(:last-child) {
     margin-right: 70px;
   }
-  
-  .footer .follow-title {
+
+  .follow-title {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0;
-  
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  
+
     color: var(--white-color);
   }
-  
-  .footer .follow-list {
+
+  .follow-list {
     display: flex;
   }
-  
-  .footer .follow-item:not(:last-child) {
+
+  .follow-item:not(:last-child) {
     margin-right: 10px;
   }
-  
-  .footer .follow-link {
+
+  .follow-link {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
-  
+
     background-color: var(--social-network-rgba);
     fill: var(--white-color);
-  
+
     transition: background-color 250ms var(--transition-timing-function);
 
-  &:hover,
-  &:focus {
+    &:hover,
+    &:focus {
       background-color: var(--button-color);
     }
-    
   }
-  
-
-  .footer .follow-icon {
+  .follow-icon {
     width: 20px;
     height: 20px;
   }
-  
-  .follow-us {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 93px;
-    width: 570px;
-    height: 86px;
-  }
-  
-  .follow-us-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-bottom: 20px;
-  
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-  }
-  
-  .follow-us-mail {
-    margin-right: 12px;
-    width: 358px;
-    height: 50px;
-    padding: 0;
-  }
-  
-  .follow-us-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  
-    min-width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    background-color: var(--button-color);
-  }
-  
-  .follow-us-text {
-    display: flex;
-    min-width: 109px;
-    height: 30px;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-  
-    color: var(--white-color);
-  }
-  
-  .follow-us-icon {
-    display: flex;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-  }
 
-
-  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOLLOW FOOTER 
-
-  .footer .follow-form {
+  .follow-form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
-  
+
     margin-left: 93px;
     min-width: 570px;
     height: 86px;
   }
-  
-  .footer .follow-text {
+  .follow-text {
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
     margin-right: auto;
-  
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  
+
     color: var(--white-color);
   }
-  
-  .footer .follow-lable {
+  .follow-lable {
     flex-direction: column;
-  
+
     margin-bottom: 0;
     padding: 0;
     margin-right: 12px;
   }
-  
-  .footer .follow-mail {
+
+  .follow-mail {
     display: flex;
     align-items: center;
     width: 358px;
     height: 50px;
     padding-left: 16px;
-  
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
     color: var(--white-color);
   }
-  
-  .footer .follow-mail::placeholder {
+  .follow-mail::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  
-  .footer .follow-button {
+  .follow-button {
     display: flex;
-  
+
     align-items: center;
     padding: 0;
     min-width: 200px;
     height: 50px;
-  
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--button-color);
     border: none;
     cursor: pointer;
   }
-  
-  .footer .follow-button-text {
+
+  .follow-button-text {
     margin-left: 28px;
     margin-right: 10px;
-  
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
-  
+
     color: var(--white-color);
   }
-  
-  .footer .follow-button-icon {
+  .follow-button-icon {
     width: 24px;
     height: 24px;
   }
-  
-  .footer .follow-form .icon {
+
+  .follow-form .icon {
     width: 24px;
     height: 24px;
   }
-  
+}
+
+/* Follower  */
+
+.follow-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+}
+
+.follow-us-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.follow-us-mail {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  padding: 0;
+}
+
+.follow-us-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--button-color);
+}
+
+.follow-us-text {
+  display: flex;
+  min-width: 109px;
+  height: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+}
+
+.follow-us-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOLLOW FOOTER
