@@ -170,7 +170,8 @@ body {
 .header__link-animation,
 .header__reference--animation {
   position: relative;
-  transition: color 250ms var(--transition-timing-function), fill 250ms var(--transition-timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link-animation:hover, .header__link-animation:focus, .header__link-animation:hover, .header__link-animation:focus,
 .header__reference--animation:hover,
@@ -403,7 +404,8 @@ body {
   align-items: center;
   border-radius: 50%;
   fill: var(--social-network);
-  transition: background-color 250ms var(--transition-timing-function), fill 250ms var(--transition-timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team .social-link:hover, .team .social-link:focus {
   background-color: var(--button-color);
@@ -458,7 +460,8 @@ body {
   border: 1px solid var(--social-network);
   border-radius: 4px;
   fill: var(--social-network);
-  transition: fill 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover, .customers-link:focus {
   fill: var(--button-color);
@@ -495,7 +498,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  transition: color 250ms var(--transition-timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .footer-link {
   color: var(--rgba-color);
@@ -547,7 +550,7 @@ body {
   border-radius: 50%;
   background-color: var(--social-network-rgba);
   fill: var(--white-color);
-  transition: background-color 250ms var(--transition-timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .follow-link:hover, .footer .follow-link:focus {
   background-color: var(--button-color);
@@ -740,7 +743,7 @@ body {
 }
 .filter .border {
   border: 1px solid #eeeeee;
-  transition: box-shadow 250ms var(--transition-timing-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter .border:hover,
 .filter .border:focus {
@@ -761,7 +764,7 @@ body {
   height: 100%;
   transform: translateY(100%);
   background-color: var(--rgba-bcgrnd-color-for-search);
-  transition: transform 250ms var(--transition-timing-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter .border:hover .hiden-action {
   transform: translateY(0%);
@@ -815,7 +818,9 @@ body {
   border-radius: 4px;
   background-color: var(--third-bcgrnd-color);
   cursor: pointer;
-  transition: color 250ms var(--transition-timing-function), background-color 250ms var(--transition-timing-function), box-shadow 250ms var(--transition-timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover, .filter-button:focus {
   color: var(--white-color);
@@ -843,173 +848,7 @@ body {
   height: 100%;
   background-color: var(--rgba-backdrop-color);
   opacity: 1;
-  transition: opacity 250ms var(--transition-timing-function);
-}
-.backdrop .modal-button {
-  display: block;
-  padding: 0;
-  margin-left: auto;
-  margin-top: 8px;
-  margin-right: 8px;
-  border: none;
-  width: 30px;
-  height: 30px;
-  transition: fill 250ms var(--transition-timing-function);
-  cursor: pointer;
-}
-.backdrop .modal-button:hover, .backdrop .modal-button:focus {
-  fill: var(--button-color);
-}
-.backdrop .modal-icon {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding: 0;
-  background-color: var(--white-color);
-}
-.backdrop .contacts {
-  display: flex;
-  flex-direction: column;
-}
-.backdrop .contacts-title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
-  margin-top: 2px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-font-color);
-}
-.backdrop .contacts-label {
-  margin-right: auto;
-  margin-left: auto;
-}
-.backdrop .contacts-name {
-  position: relative;
-}
-.backdrop .contacts-tel {
-  position: relative;
-}
-.backdrop .contacts-mail {
-  position: relative;
-}
-.backdrop .contacts-label:nth-child(n+3) .contacts-box {
-  margin-top: 10px;
-}
-.backdrop .contacts-box {
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--paragraph-color);
-}
-.backdrop .contacts-input {
-  min-width: 448px;
-  height: 40px;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: outline-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
-  cursor: pointer;
-}
-.backdrop .contacts-input:focus, .backdrop .contacts-input:hover {
-  outline-color: var(--button-color);
-  border-color: var(--button-color);
-}
-.backdrop .contacts-input:focus + .icon-box, .backdrop .contacts-input:hover + .icon-box {
-  fill: var(--button-color);
-  transition: fill 250ms var(--transition-timing-function);
-}
-.backdrop .contacts-label:nth-child(2) .icon-box {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-}
-.backdrop .contacts-label:nth-child(n+3) .icon-box {
-  position: absolute;
-  top: calc((100% + 10px) / 2);
-  left: 12px;
-  width: 18px;
-  height: 18px;
-}
-.backdrop .contacts-comment {
-  min-width: 448px;
-  height: 120px;
-  resize: none;
-  padding-left: 16px;
-  padding-top: 12px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: outline-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
-}
-.backdrop .contacts-comment:focus, .backdrop .contacts-comment:hover {
-  outline-color: var(--button-color);
-  border-color: var(--button-color);
-}
-.backdrop .contacts-comment::-moz-placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.backdrop .contacts-comment:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.backdrop .contacts-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.backdrop .contacts-agree:checked + .check-box-icon {
-  background-color: var(--button-color);
-  border-color: var(--button-color);
-  background-image: url("../images/checkbox.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.backdrop .contacts-checkbox {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  margin-left: 52px;
-  margin-bottom: 30px;
-}
-.backdrop .checkbox-text {
-  margin-left: 7px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--paragraph-color);
-}
-.backdrop .checkbox-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: var(--button-color);
-}
-.backdrop .contacts-button-text {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -1031,7 +870,58 @@ body {
   border-radius: 4px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--transition-timing-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .modal-button {
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.backdrop .modal-button:hover, .backdrop .modal-button:focus {
+  fill: var(--button-color);
+}
+
+.backdrop .modal-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white-color);
+}
+
+.backdrop .contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.backdrop .contacts-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-top: 2px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
+}
+
+.backdrop .contacts-label {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.backdrop .contacts-name {
+  position: relative;
 }
 
 /* .backdrop .contacts-name::after {
@@ -1045,6 +935,10 @@ body {
     height: 18px;
     background-image: url("../images/name.svg");
   } */
+.backdrop .contacts-tel {
+  position: relative;
+}
+
 /* .backdrop .contacts-tel::after {
     position: absolute;
     top: calc((100% + 10px) / 2);
@@ -1056,6 +950,10 @@ body {
     height: 18px;
     background-image: url("../images/phone-contacts.svg");
   } */
+.backdrop .contacts-mail {
+  position: relative;
+}
+
 /* .backdrop .contacts-mail::after {
     position: absolute;
     top: calc((100% + 10px) / 2);
@@ -1067,12 +965,99 @@ body {
     height: 18px;
     background-image: url("../images/mail-contacts.svg");
   } */
+.backdrop .contacts-label:nth-child(n+3) .contacts-box {
+  margin-top: 10px;
+}
+
+.backdrop .contacts-box {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--paragraph-color);
+}
+
+.backdrop .contacts-input {
+  min-width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.backdrop .contacts-input:focus, .backdrop .contacts-input:hover {
+  outline-color: var(--button-color);
+  border-color: var(--button-color);
+}
+.backdrop .contacts-input:focus + .icon-box, .backdrop .contacts-input:hover + .icon-box {
+  fill: var(--button-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .contacts-label:nth-child(2) .icon-box {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.backdrop .contacts-label:nth-child(n+3) .icon-box {
+  position: absolute;
+  top: calc((100% + 10px) / 2);
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
 .contacts-label .icon {
   display: block;
   width: 18px;
   height: 18px;
   margin: 0;
   padding: 0;
+}
+
+.backdrop .contacts-comment {
+  min-width: 448px;
+  height: 120px;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop .contacts-comment:focus, .backdrop .contacts-comment:hover {
+  outline-color: var(--button-color);
+  border-color: var(--button-color);
+}
+
+.backdrop .contacts-comment::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.backdrop .contacts-comment:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.backdrop .contacts-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Hidden Check-box */
@@ -1098,7 +1083,42 @@ body {
   height: 15px;
   border: 1px solid #000000;
   border-radius: 2px;
-  transition: background-color 250ms var(--transition-timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .contacts-agree:checked + .check-box-icon {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  background-image: url("../images/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.backdrop .contacts-checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 52px;
+  margin-bottom: 30px;
+}
+
+.backdrop .checkbox-text {
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+}
+
+.backdrop .checkbox-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: var(--button-color);
 }
 
 .contacts-button {
@@ -1111,4 +1131,13 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+.backdrop .contacts-button-text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
 }/*# sourceMappingURL=main.css.map */

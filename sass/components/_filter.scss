@@ -31,7 +31,8 @@
 
   .border {
     border: 1px solid #eeeeee;
-    transition: box-shadow 250ms var(--transition-timing-function);
+    @include trans($tf: box-shadow);
+    // transition: box-shadow 250ms var(--transition-timing-function);
   }
   .border:hover,
   .border:focus {
@@ -56,7 +57,8 @@
 
     transform: translateY(100%);
     background-color: var(--rgba-bcgrnd-color-for-search);
-    transition: transform 250ms var(--transition-timing-function);
+    @include trans($tf: transform);
+    // transition: transform 250ms var(--transition-timing-function);
   }
   .border:hover .hiden-action {
     transform: translateY(0%);
@@ -119,9 +121,13 @@
   background-color: var(--third-bcgrnd-color);
   cursor: pointer;
 
-  transition: color 250ms var(--transition-timing-function),
-    background-color 250ms var(--transition-timing-function),
-    box-shadow 250ms var(--transition-timing-function);
+  @include trans($tf: color);
+  @include trans($tf: background-color);
+  @include trans($tf: box-shadow);
+
+  // transition: color 250ms var(--transition-timing-function),
+  //   background-color 250ms var(--transition-timing-function),
+  //   box-shadow 250ms var(--transition-timing-function);
 
   &:hover,
   &:focus {

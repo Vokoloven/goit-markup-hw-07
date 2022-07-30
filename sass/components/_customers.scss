@@ -44,8 +44,11 @@
   border: 1px solid var(--social-network);
   border-radius: 4px;
   fill: var(--social-network);
-  transition: fill 250ms var(--transition-timing-function),
-    border-color 250ms var(--transition-timing-function);
+
+  @include trans($tf: fill);
+  @include trans($tf: border-color);
+  // transition: fill 250ms var(--transition-timing-function),
+  //   border-color 250ms var(--transition-timing-function);
 
   &:hover,
   &:focus {

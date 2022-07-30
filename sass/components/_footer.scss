@@ -29,7 +29,8 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white-color);
-    transition: color 250ms var(--transition-timing-function);
+    @include trans($tf: color);
+    // transition: color 250ms var(--transition-timing-function);
   }
   .footer-link {
     color: var(--rgba-color);
@@ -92,7 +93,8 @@
     background-color: var(--social-network-rgba);
     fill: var(--white-color);
 
-    transition: background-color 250ms var(--transition-timing-function);
+    @include trans($tf: background-color);
+    // transition: background-color 250ms var(--transition-timing-function);
 
     &:hover,
     &:focus {

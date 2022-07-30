@@ -74,8 +74,10 @@
 
     border-radius: 50%;
     fill: var(--social-network);
-    transition: background-color 250ms var(--transition-timing-function),
-      fill 250ms var(--transition-timing-function);
+    @include trans($tf: background-color);
+    @include trans($tf: transition);
+    // transition: background-color 250ms var(--transition-timing-function),
+    //   fill 250ms var(--transition-timing-function);
 
     &:hover,
     &:focus {
